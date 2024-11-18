@@ -5,10 +5,11 @@ import pandas as pd
 
 @click.group()
 def cmd_group():
+    """Function to introduce different options to the smallangle commando.
+    """
     pass  
 
 @cmd_group.command()
-
 @click.option(
     "-n",
     default=6
@@ -25,7 +26,6 @@ def sin(n):
     print(df)
 
 @cmd_group.command()
-
 @click.option(
     "-n",
     default=6
